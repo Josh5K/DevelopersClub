@@ -62,6 +62,7 @@ section {
 	background-size: cover;
 	color: #fff;
 	position: relative;
+	width: 100%;
 }
 .about-sec:before {
 	content: ' ';

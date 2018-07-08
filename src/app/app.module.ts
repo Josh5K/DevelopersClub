@@ -12,6 +12,8 @@ import { ProjectComponent } from './project/project.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProjectslistComponent } from './projectslist/projectslist.component';
+import { UserslistComponent } from './userslist/userslist.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ProfileComponent } from './profile/profile.component';
     ProjectComponent,
     LoginComponent,
     SignUpComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProjectslistComponent,
+    UserslistComponent
   ],
   imports: [
     BrowserModule,

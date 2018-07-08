@@ -46,6 +46,10 @@
     height: 335px;
 }
 
+.dc-content {
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .dc-col {
         width: 100%;
