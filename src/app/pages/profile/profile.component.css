@@ -1,0 +1,57 @@
+.dc-col {
+    float: left;
+}
+
+.dc-left-25 {
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+.dc-right-75 {
+    width: 75%;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dc-project-image {
+    height: 95px;
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dc-row {
+    display: flex;
+}
+
+.dc-content {
+    background-color: rgb(212, 212, 212);
+}
+
+
+.dc-white {
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.dc-container {
+    padding: 5px;
+}
+
+.dc-profile {
+    width: 335px;
+    height: 335px;
+}
+
+.dc-content {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .dc-col {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+<div class="dc-content">
+  <div class="dc-row">
+      <div class="dc-card-column" *ngFor="let project of projects">
+        <a class="dc-link-nostyle" routerLink="/Project/{{project.id}}">
+          <div class="dc-card-container">
+              <div class="dc-card">
+                  <img src="../../assets/images/angularlogo.gif" alt="" class="dc-card-background">
+                  <div class="dc-card-title">
+                      <h4 class="dc-p-10">Project Name</h4>
+                  </div>
+                  <div class="dc-card-content">
+                      <p class="dc-p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur, nostrum laborum blanditiis aliquid consectetur itaque quis fugit quia earum? Cupiditate error distinctio excepturi ducimus, corrupti amet eos inventore sunt!</p>
+                  </div>
+                  <div class="dc-card-footer">
+                      <hr class="dc-hr">
+                      <p class="dc-card-likes"><i class="fa fa-thumbs-up" (click)="toggleVote(this)" [ngClass]="status ? 'fa fa-thumbs-up' : 'fa fa-thumbs-down'"></i> {{project.points}}</p>
+                  </div>
+              </div>
+          </div>
+        </a>
+      </div>
+  </div>
+</div>
