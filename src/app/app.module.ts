@@ -14,6 +14,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectslistComponent } from './projectslist/projectslist.component';
 import { UserslistComponent } from './userslist/userslist.component';
+import { ProjectcardComponent } from './components/projectcard/projectcard.component';
+import { CommentboxComponent } from './components/commentbox/commentbox.component';
+import { ProfileSidebarComponent } from './components/profile-sidebar/profile-sidebar.component';
+import { CommentBoxComponent } from './components/comment-box/comment-box.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { BrowseComponent } from './pages/browse/browse.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { UserslistComponent } from './userslist/userslist.component';
     SignUpComponent,
     ProfileComponent,
     ProjectslistComponent,
-    UserslistComponent
+    UserslistComponent,
+    ProjectcardComponent,
+    CommentboxComponent,
+    ProfileSidebarComponent,
+    CommentBoxComponent,
+    ProjectCardComponent,
+    BrowseComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
