@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { HeadlineComponent } from '../../components/headline/headline.component';
 
 @Component({
   selector: 'app-landing',
+  
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })

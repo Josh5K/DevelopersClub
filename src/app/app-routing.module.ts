@@ -4,13 +4,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, Router } from '@angular/router';
 
 //CLI Generated Components
-import { LandingComponent } from './landing/landing.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { ProjectComponent } from './project/project.component';
-import { LoginComponent } from "./login/login.component";
-import { SignUpComponent } from "./sign-up/sign-up.component";
-import { ProfileComponent } from './profile/profile.component';
-import { ProjectslistComponent } from './projectslist/projectslist.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { BrowseComponent } from './pages/browse/browse.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   //Paths
@@ -19,9 +19,9 @@ const routes: Routes = [
   { path: '404', component: NotFoundComponent },
   { path: 'project', component: ProjectComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'sign-up', component: SignUpComponent },
-  { path: 'Projects', component: ProjectslistComponent},
   { path: 'Project/:project', component: ProjectComponent },
+  { path: ':identifer/settings', component: SettingsComponent },
+  { path: 'browse', component: BrowseComponent },
   //Redirects
   { path: '**', component: NotFoundComponent },
 ]
