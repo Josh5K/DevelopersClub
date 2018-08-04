@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ProfileSidebarComponent } from './components/profile-sidebar/profile-sidebar.component';
@@ -16,6 +17,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HeadlineComponent } from './components/headline/headline.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     LoginComponent,
     ProfileComponent,
     ProjectComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeadlineComponent
   ],
   imports: [
     BrowserModule,

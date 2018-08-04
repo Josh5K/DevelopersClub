@@ -11,6 +11,7 @@ import { ProjectComponent } from './pages/project/project.component';
 import { BrowseComponent } from './pages/browse/browse.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HeadlineComponent } from './components/headline/headline.component';
 
 const routes: Routes = [
   //Paths
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'Project/:project', component: ProjectComponent },
   { path: ':identifer/settings', component: SettingsComponent },
   { path: 'browse', component: BrowseComponent },
+  { path: 'test', component: HeadlineComponent },
   //Redirects
   { path: '**', component: NotFoundComponent },
 ]

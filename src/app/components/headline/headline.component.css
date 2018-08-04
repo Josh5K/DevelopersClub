@@ -1,0 +1,57 @@
+.headline {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 75px;
+    height: 450px;
+}
+
+.headline-left {
+    width: 65%;
+    background-color: white;
+    float: left;
+}
+
+.headline-right {
+    width: 33%;
+    background-color: white;
+    float: right;
+}
+
+.headline-image {
+    width: 100%;
+}
+
+.headline-title, .headline-description {
+    padding: 5px;
+}
+
+.headline-description {
+    color: gray;
+}
+
+.headline-links {
+    list-style: none;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+.link-header {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.link-header-button {
+    display: inline-block;
+    width: 33.33%;
+}
+
+.link-header-button > button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.active {
+    border-bottom: 2px solid gray;
+    border-width: 80%;
+}
