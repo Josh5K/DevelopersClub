@@ -10,7 +10,8 @@
         <div class="dc-display-container">
           <img src="https://media.giphy.com/media/l0HlweBPexsWmJ72M/giphy.gif" class="dc-profile" alt="Avatar">
           <div class="dc-display-bottomleft dc-container dc-text-black">
-            <h2>{{user[0].username}}</h2>
+            <h2 *ngIf="user">{{user[0].username}}</h2>
+            <h6 *ngIf="user">{{user[0].email}}</h6>
           </div>
         </div>
         <div class="dc-container">
@@ -29,17 +30,17 @@
 
     <!-- Right Column -->
     <div class="dc-col dc-right-75">
-    
+
       <div class="dc-container dc-white">
         <h2 class="dc-text-grey dc-padding-16"><i class="fa fa-suitcase fa-fw"></i>Projects</h2>
-        <div class="dc-container" *ngFor="let project of projects">
-          <img class="dc-project-image" src="../../assets/images/angularlogo.gif">
-          <h5><b>{{project.name}} - {{project.role}}</b></h5>
-          <h6><i class="fa fa-calendar fa-fw"></i>{{project.startdate}} - {{project.enddate}}</h6>
-          <p>{{project.description}}</p>
-          <hr>
-        </div>
-        
+          <div class="dc-container" *ngFor="let project of projects">
+            <img class="dc-project-image" src="../../assets/images/angularlogo.gif">
+            <h5><b>{{project.name}} - {{project.role}}</b></h5>
+            <h6><i class="fa fa-calendar fa-fw"></i>{{project.startdate}} - {{project.enddate}}</h6>
+            <p>{{project.description}}</p>
+            <hr>
+          </div>
+
     <!-- End Right Column -->
     </div>
     

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
+import { UserService } from '../../services/user/user-service.service';
+import { ProjectService } from '../../services/project/project-service.service';
 
 
 @Component({
@@ -9,33 +11,22 @@ import { HttpHeaders } from '@angular/common/http';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
+
 export class ProfileComponent implements OnInit {
-  username;
-  constructor(private route: ActivatedRoute, private http: HttpClient) { 
+  public username: String;
+  public user: Object;
+  public projects: Object;
+
+  constructor(private route: ActivatedRoute, private http: HttpClient, private userService: UserService, private projectService: ProjectService) { 
     this.username = this.route.snapshot.params.profile;
   }
-  user;
-  projects;
-  userid;
+  
   ngOnInit() {
-    var headers = new HttpHeaders().set('name', this.username);
-    
-    this.http.get('http://localhost:3000/users', {
-      headers: headers
-    }).subscribe(data => {
-      this.user = data;
-      this.userid = data[0].id;
-      console.log(this.userid);
-
-      headers = new HttpHeaders().set('id', this.userid);
-      this.http.get('http://localhost:3000/users/projects', {
-        headers: headers
-      }).subscribe(data => {
-        this.projects = data;
-        console.log(data);
-      });
-    });
-    
-
+      this.userService.getUserProfile(this.username).subscribe( data => {
+        this.user = data;
+        this.projects = this.projectService.getUserProjects(this.user[0].id).subscribe(data => {
+          this.projects = data;
+        });
+      }); 
   }
 }
