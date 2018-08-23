@@ -1,4 +1,0 @@
-## STAGE 1: BUILD ANGULAR APPLICATION ##
-FROM node:8 as builder
-
-COPY 
