@@ -18,6 +18,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeadlineComponent } from './components/headline/headline.component';
+import { ProjectCarouselComponent } from './components/project-carousel/project-carousel.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HeadlineComponent } from './components/headline/headline.component';
     ProfileComponent,
     ProjectComponent,
     NotFoundComponent,
-    HeadlineComponent
+    HeadlineComponent,
+    ProjectCarouselComponent
   ],
   imports: [
     BrowserModule,

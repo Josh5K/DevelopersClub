@@ -25,3 +25,22 @@
     height: 35px;
     width: 35px;
 }
+
+#navstamp {
+    position: absolute;
+    left: 50%;
+    display: block;
+}
+
+#navstamp img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 2px solid black;
+    margin-left: -65px !important;  /* This value must be the same as the logo width */
+}
+
+#navstamp img:hover {
+    transform: scale(1.05);
+}
